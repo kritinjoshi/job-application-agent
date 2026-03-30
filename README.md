@@ -1,6 +1,6 @@
-# 🛡️ Executive Job Pipeline Agent (L6-L8 TPM)
+# 🛡️ Executive Job Pipeline Agent (L6-L8+)
 
-An autonomous, multi-agent pipeline designed to discover, rank, and tailor applications for elite Technical Program Management roles (Staff, Principal, Director). This system bypasses standard feed noise using targeted "Sniper" searches and ensures 100% uptime through resilient LLM fallback logic.
+An autonomous, multi-agent pipeline designed to discover, rank, and tailor applications for elite, specific target roles (Staff, Principal, Director). This system bypasses standard feed noise using targeted "Sniper" searches and ensures 100% uptime through resilient LLM fallback logic.
 
 ---
 
