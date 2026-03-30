@@ -4,7 +4,7 @@ from dotenv import load_dotenv
 base_dir = os.path.dirname(__file__)
 load_dotenv(os.path.join(base_dir, '.env'))
 
-from src.sheets_manager.spreadsheet import SheetsManager
+from src.integrations.google.sheets.spreadsheet import SheetsManager
 
 print("Initializing API connection inherently...")
 sheets = SheetsManager()

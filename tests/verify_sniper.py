@@ -3,8 +3,10 @@ import sys
 
 # Add project root to sys.path
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+from dotenv import load_dotenv
+load_dotenv(os.path.join(os.path.dirname(__file__), '..', '.env'))
 
-from src.scraper.job_finder import JobFinder
+from src.discovery.engine import JobFinder
 from src.agents.crew import ResumeCrew
 
 def verify_sniper_search():

@@ -2,7 +2,7 @@ import requests
 from bs4 import BeautifulSoup
 import json
 from textwrap import dedent
-from src.utils.local_ranker import LocalRanker
+from src.intelligence.ranker import LocalRanker
 
 class JobFinder:
     def __init__(self, crew_agent, resume_text=None):

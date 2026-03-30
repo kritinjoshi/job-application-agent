@@ -2,7 +2,7 @@ import os
 import datetime
 from dotenv import load_dotenv
 from googleapiclient.discovery import build
-from src.auth.google_auth import get_google_credentials
+from src.integrations.google.auth.google_auth import get_google_credentials
 
 class SheetsManager:
     def __init__(self, spreadsheet_id=None):

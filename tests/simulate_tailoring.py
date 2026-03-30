@@ -1,6 +1,6 @@
 import os
 import docx
-from src.docs_manager.docx_editor import DocxEditor
+from src.integrations.google.docs.docx_editor import DocxEditor
 
 def run_simulation():
     base_dir = '/Users/mrunalshirude/.gemini/antigravity/scratch/job_application_agent'

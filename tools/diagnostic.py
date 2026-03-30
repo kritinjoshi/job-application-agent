@@ -10,10 +10,10 @@ def run_diagnostic():
     load_dotenv(os.path.join(base_dir, '.env'))
     sys.path.append(base_dir)
     
-    from src.scraper.job_finder import JobFinder
-    from src.sheets_manager.spreadsheet import SheetsManager
-    from src.docs_manager.document import DocsManager
-    from src.docs_manager.docx_editor import DocxEditor
+    from src.discovery.engine import JobFinder
+    from src.integrations.google.sheets.spreadsheet import SheetsManager
+    from src.integrations.google.docs.document import DocsManager
+    from src.integrations.google.docs.docx_editor import DocxEditor
     from src.agents.crew import ResumeCrew
     
     # 2. Resourcing
@@ -77,7 +77,7 @@ def run_diagnostic():
         doc_cl_url = docs.create_resume_doc_from_file(f"DIAGNOSTIC CL | {job['company']}", cl_path, "cover_letters")
         
         # 8. Sheet Append
-        from src.main import extract_logistics
+        from main import extract_logistics
         logistics = extract_logistics(full_job_desc, job.get('location', 'San Francisco'))
         
         sheets.append_job_row(

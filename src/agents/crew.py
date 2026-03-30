@@ -2,7 +2,7 @@ import os
 import json
 import requests
 import re
-from src.telemetry.telemetry_manager import TelemetryManager
+from src.monitoring.telemetry_manager import TelemetryManager
 from textwrap import dedent
 
 class ResumeCrew:

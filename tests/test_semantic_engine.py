@@ -4,8 +4,8 @@ import sys
 # Add project root to sys.path
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
-from src.utils.local_ranker import LocalRanker
-from src.docs_manager.docx_editor import DocxEditor
+from src.intelligence.ranker import LocalRanker
+from src.integrations.google.docs.docx_editor import DocxEditor
 
 def test_engine():
     # 1. Load Resume

@@ -4,15 +4,15 @@ import time
 import subprocess
 from dotenv import load_dotenv
 
-base_dir = os.path.join(os.path.dirname(__file__), '..')
+base_dir = os.path.dirname(__file__)
 load_dotenv(os.path.join(base_dir, '.env'))
 
-from src.scraper.job_finder import JobFinder
-from src.sheets_manager.spreadsheet import SheetsManager
-from src.docs_manager.document import DocsManager
-from src.docs_manager.docx_editor import DocxEditor
+from src.discovery.engine import JobFinder
+from src.integrations.google.sheets.spreadsheet import SheetsManager
+from src.integrations.google.docs.document import DocsManager
+from src.integrations.google.docs.docx_editor import DocxEditor
 from src.agents.crew import ResumeCrew
-from src.utils.local_ranker import LocalRanker
+from src.intelligence.ranker import LocalRanker
 
 def trigger_mac_message():
     import datetime
@@ -278,7 +278,7 @@ def main():
     # TRIGGER MAC COMPLETION MESSAGE!
     trigger_mac_message()
 
-    from src.telemetry.telemetry_manager import TelemetryManager
+    from src.monitoring.telemetry_manager import TelemetryManager
     stats = TelemetryManager.get_summary_stats()
     print("\n" + stats)
 

@@ -3,7 +3,7 @@ import io
 import time
 from googleapiclient.discovery import build
 from googleapiclient.http import MediaFileUpload
-from src.auth.google_auth import get_google_credentials
+from src.integrations.google.auth.google_auth import get_google_credentials
 
 class DocsManager:
     def __init__(self):
