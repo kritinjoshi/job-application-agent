@@ -2,7 +2,10 @@
 __pycache__/
 *.pyc
 .DS_Store
-data/usage_history.json
+data/
 artifacts/
 logs/
 .gemini/
+venv/
+credentials.json
+token.pickle
