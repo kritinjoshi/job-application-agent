@@ -1,6 +1,6 @@
-# 🛡️ Executive Job Pipeline Agent (L6-L8+)
+# 🛡️ Executive Job Pipeline Agent
 
-An autonomous, multi-agent pipeline designed to discover, rank, and tailor applications for elite, specific target roles (Staff, Principal, Director). This system bypasses standard feed noise using targeted "Sniper" searches and ensures 100% uptime through resilient LLM fallback logic.
+An autonomous, multi-agent pipeline designed to discover, rank, and tailor applications for elite, specific target roles at a Senior or Executive seniority level. This system bypasses standard feed noise using targeted "Sniper" searches and ensures 100% uptime through resilient LLM fallback logic.
 
 ---
 
@@ -12,7 +12,7 @@ Bypasses LinkedIn's default 7-day recency bias. The "Sniper" engine performs tar
 ### 🧠 2. Statistical Semantic Ranker (v1.5)
 A local scoring engine that evaluates roles based on:
 - **Top Tier Boost**: +15 point priority for elite firms.
-- **Seniority Rubric**: Regex-based salary and title extraction (L6+ focus).
+- **Seniority Rubric**: Regex-based salary and title extraction (focused on leadership seniority).
 - **Freshness Factor**: Dynamic decay (-0.2 pts/day) to balance intent vs. recency.
 
 ### 🛡️ 3. "Zero-Failure" LLM Fallback
